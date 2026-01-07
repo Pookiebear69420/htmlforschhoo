@@ -1,134 +1,176 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-<title>About the goodness of ai</title>
+<title>About the Goodness of AI</title>
+
 <style>
-  body {
-    margin: 0;
-    padding: 0;
-    background: #f4f4f4;
-    font-family: Georgia, "Times New Roman", serif;
-    color: #2c3e50;
-    line-height: 1.6;
-  }
-  .container {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 40px;
-    background: white;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
-  h1 {
-    font-size: 2.2rem;
-    margin-bottom: 5px;
-    color: #1a1a1a;
-    border-bottom: 3px solid #34495e;
-    padding-bottom: 10px;
-  }
-  .subtitle {
-    font-style: italic;
-    color: #7f8c8d;
-    margin-bottom: 30px;
-  }
-    h2 {
-    margin-top: 40px;
-    font-size: 1.6rem;
-    color: #2c3e50;
-    border-left: 4px solid #3498db;
-    padding-left: 12px;
-  }
-  p {
-    font-size: 1.05rem;
-    margin: 15px 0;
-  }
-  .section {
-    margin-top: 25px;
-    padding: 20px;
-    background: #fafafa;
-    border-left: 3px solid #95a5a6;
-  }
-  ul {
-    margin: 15px 0;
-    padding-left: 20px;
-  }
-  li {
-    margin-bottom: 10px;
-    font-size: 1.02rem;
-  }
-  .rules li {
-    margin-bottom: 18px;
-  }
-  .bad {
-    color: #c0392b;
-  }
-    .pledge {
-    margin-top: 35px;
-    padding: 25px;
-    border: 2px solid #34495e;
-    background: #ecf0f1;
-    font-style: italic;
-  }
-  footer {
-    text-align: center;
-    margin-top: 50px;
-    padding-top: 20px;
-    border-top: 1px solid #bdc3c7;
-    color: #7f8c8d;
-    font-size: 0.9rem;
-  }
+:root {
+  --primary: #3b82f6;
+  --secondary: #8b5cf6;
+  --accent: #22d3ee;
+  --danger: #ef4444;
+  --dark: #0f172a;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at top, #1e293b, #020617);
+  font-family: "Segoe UI", system-ui, sans-serif;
+  color: #e5e7eb;
+}
+
+.container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 50px;
+  background: linear-gradient(145deg, #020617, #020617);
+  border-radius: 20px;
+  box-shadow: 0 0 60px rgba(59,130,246,0.25);
+}
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #3b82f6, #22d3ee, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 20px rgba(59,130,246,0.4);
+}
+.subtitle {
+  font-size: 1.1rem;
+  color: #c7d2fe;
+  margin-bottom: 40px;
+  font-style: italic;
+}
+h2 {
+  margin-top: 50px;
+  font-size: 1.8rem;
+  color: #f8fafc;
+  position: relative;
+  padding-left: 18px;
+}
+
+h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 6px;
+  height: 80%;
+  background: linear-gradient(#3b82f6, #8b5cf6);
+  border-radius: 10px;
+}
+.section {
+  margin-top: 25px;
+  padding: 28px;
+  border-radius: 16px;
+  background: linear-gradient(145deg, #020617, #020617);
+  border: 1px solid rgba(99,102,241,0.25);
+  box-shadow: inset 0 0 0 1px rgba(59,130,246,0.15);
+}
+ul {
+  padding-left: 24px;
+}
+
+li {
+  margin-bottom: 16px;
+  font-size: 1.05rem;
+  color: #e5e7eb;
+}
+
+li strong {
+  color: var(--accent);
+}
+
+.rules li {
+  margin-bottom: 20px;
+}
+
+.bad {
+  color: var(--danger);
+  font-weight: 600;
+}
+.pledge {
+  margin-top: 45px;
+  padding: 35px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #020617, #020617);
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  box-shadow:
+    0 0 0 2px rgba(59,130,246,0.6),
+    0 0 30px rgba(139,92,246,0.4);
+  font-size: 1.15rem;
+  font-style: italic;
+  color: #f8fafc;
+}
+footer {
+  text-align: center;
+  margin-top: 60px;
+  padding-top: 25px;
+  border-top: 1px solid rgba(148,163,184,0.25);
+  color: #94a3b8;
+  font-size: 0.95rem;
+}
+
+footer strong {
+  color: var(--accent);
+}
 </style>
-  </head>
+</head>
+
 <body>
 <div class="container">
-  <h1>Ai usefullness</h1>
+
+  <h1>AI Usefulness</h1>
   <p class="subtitle">
-      A Personal Charter for Using AI Responsibly in School<br>
-    AI is my helper.
+    A Personal Charter for Using AI Responsibly in School<br>
+    AI is my helper — not my brain.
   </p>
-  
+
   <h2>How I Use AI Responsibly</h2>
   <div class="section">
     <ul>
       <li><strong>Writing Support:</strong> Brainstorm ideas, improve grammar, and clarify my own writing.</li>
-        <li><strong>Time Management:</strong> Build study schedules and break big assignments into manageable steps.</li>
-      <li><strong>Communication:</strong> Draft respectful emails to teachers for recommendations, questions, or help.</li>
-      <li><strong>Future Planning:</strong> Explore careers, skills, and goals for life after school.</li>
+   <li><strong>Time Management:</strong> Build study schedules and break large assignments into steps.</li>
+      <li><strong>Communication:</strong> Draft respectful emails to teachers.</li>
+    <li><strong>Future Planning:</strong> Explore careers, skills, and goals.</li>
     </ul>
   </div>
-  
+
   <h2>The 5 AI Rules I Live By</h2>
   <div class="section rules">
-      <ul>
-      <li><strong>AI is technology, not a human.</strong> It gives suggestions, I make decisions.</li>
-      <li><strong>Critically evaluate responses.</strong> I don't trust answers without thinking them through.</li>
-      <li><strong>If something feels off, investigate.</strong> I double-check facts and sources.</li>
-      <li><strong>Keep private information private.</strong> No passwords, grades, or personal data shared with AI.</li>
-      <li><strong>Use AI to boost my talents, not replace them.</strong> My brain does the real work.</li>
+    <ul>
+      <li><strong>AI is technology, not a human.</strong> It suggests — I decide.</li>
+      <li><strong>Think critically.</strong> I question every answer.</li>
+      <li><strong>Verify information.</strong> I double-check facts.</li>
+      <li><strong>Protect privacy.</strong> No personal data shared.</li>
+      <li><strong>Enhance, don’t replace.</strong> Learning comes first.</li>
     </ul>
   </div>
-  
+
   <h2>What I Will NOT Do</h2>
   <div class="section">
     <ul>
-      <li class="bad">Copy AI answers and submit them as my own work</li>
-      <li class="bad">Use AI during tests or quizzes without permission</li>
-      <li class="bad">Let AI do all my thinking</li>
-      <li class="bad">Use AI to cheat or avoid learning</li>
+      <li class="bad">Submit AI work as my own</li>
+     <li class="bad">Use AI on tests without permission</li>
+      <li class="bad">Let AI think for me</li>
+      <li class="bad">Use AI to cheat</li>
     </ul>
   </div>
-  
-   <h2>My AI Pledge</h2>
+
+  <h2>My AI Pledge</h2>
   <div class="pledge">
-    <p>
-      I will use AI as a tool, not a shortcut.<br>
-      I will think first, question second, and submit work I understand.<br>
-      I will protect my privacy, respect my teachers,<br>
-      and use AI to become smarter — not lazier.
-    </p>
+    I will use AI as a tool, not a shortcut.<br>
+    I will think, question, and learn.<br>
+    I will respect my teachers and my future.<br>
+    I will become smarter — not lazier.
   </div>
-  
-  <footer>
-    Responsible AI Starts With Parker, trust, im peak guys, trust
+
+ <footer>
+    Responsible AI starts with <strong>Parker</strong>.
   </footer>
+
 </div>
 </body>
 </html>
